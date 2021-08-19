@@ -11,7 +11,7 @@ catch (PDOException $e)
     }
 $server = 'tr1.';
 //$account_id = '71hWw-qbbO0_WXoD1FG23pOtKg_ch-m8wJelM9HceKpeQBA';
-$api_key = 'RGAPI-d612e4d1-20e2-4047-9890-d13fef36ee5f';
+$api_key = '';
 $query="SELECT * FROM discover WHERE done=:done ORDER BY idds LIMIT 0,1";
     $query_parameters=[
         'done'=>0
