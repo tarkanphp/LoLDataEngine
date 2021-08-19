@@ -33,8 +33,6 @@ class DataEngine
         $summonerId = "IVR3ZplmnBPfrhNf6xf3jYX3ECh9Y-7KpRSCxBlsmWwGqMU/";
         $endPoint = sprintf("summoner/v4/summoners/%s%s", $summonerId, $this->apiKey);
         $url = sprintf($this->url, $endPoint);
-        echo $url;
-        exit();
         try{
             $response = $this->api->sendRequest("get", $url);
             if($response->status) {
